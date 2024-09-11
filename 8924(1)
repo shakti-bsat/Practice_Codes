@@ -1,0 +1,15 @@
+str = input().strip().lower()
+x,y=0,0
+for i in str:
+    if i == "r":
+        x += 1
+    elif i == "l":
+        x -= 1
+    elif i == "u":
+        y += 1
+    else:
+        y -= 1
+if x==0 and y==0:
+    print("YES")
+else:
+    print("NO")
